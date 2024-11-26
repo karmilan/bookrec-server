@@ -56,7 +56,7 @@ export const BookDetail = async (req, res) => {
 };
 
 
-// uodate book 
+// uodate a book 
 export const BookUpdate = async (req, res) => {
     console.log("req>>", req.body);
 
