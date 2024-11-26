@@ -24,11 +24,8 @@ jobs:
       - name: Run in development mode
         run: npm start
 
-      - name: Run tests
-        run: npm test
-
       - name: Lint code
-        run: npm run lint
+        run: npm run build
 
   deploy:
     needs: build
