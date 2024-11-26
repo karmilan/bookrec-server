@@ -20,3 +20,4 @@ jobs:
         uses: digitalocean/app_action/deploy@v2
         with:
           token: ${{ secrets.dop_v1_f2d393397414d1138b87885ba10946ff21debe9a10b163f6041989be8eb6b750 }}
+          app_name: dolphin-app
