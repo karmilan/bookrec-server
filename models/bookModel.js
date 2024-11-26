@@ -26,7 +26,7 @@ const bookSchema = mongoose.Schema({
     },
     readingStatus: {
         type: String,
-        enum: ['Not Started', 'In Progress', 'Completed'],
+        enum: ['Not Started', 'Currently Reading', 'Completed'],
         default: 'Not Started',
     },
     isFavourite: {

@@ -68,6 +68,8 @@ export const BookUpdate = async (req, res) => {
                 author: req.body.author,
                 genre: req.body.genre,
                 description: req.body.description,
+                readingStatus: req.body.readingStatus,
+                isFavourite: req.body.isFavourite,
             },
             {
                 new: true,
