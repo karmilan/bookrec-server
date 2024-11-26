@@ -40,4 +40,4 @@ app.use('/assets/images', express.static(path.join(__dirname, '../assets/images'
 app.use("/api", reviewRoutes);
 
 
-app.listen(PORT, () => console.log(`server started on port ${PORT}`))
+app.listen(PORT, () => console.log(`server started on port ${PORT} in prod`))
