@@ -22,7 +22,7 @@ jobs:
         run: npm install
 
       - name: Run in development mode
-        run: npm run dev
+        run: npm start
 
       - name: Run tests
         run: npm test
