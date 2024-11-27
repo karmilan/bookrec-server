@@ -53,5 +53,21 @@ export const ReviewDetail = async (req, res) => {
     }
 };
 
+// get review by book 
+export const ReviewByBookId = async (req, res) => {
+    try {
+        const { bookid } = req.params;
+        console.log("req.params", req.params);
+
+        const reviews = await Review.find({ bookId: bookid });
+        if (reviews.length === 0) {
+            return res.status(404).json({ message: "No reviews found for this book." });
+        }
+        res.json(reviews);
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+};
+
 
 
