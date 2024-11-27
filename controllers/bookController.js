@@ -14,11 +14,9 @@ export const BookIndex = async (req, res) => {
 
 // create new book 
 export const BookCreate = async (req, res) => {
-    console.log("req>>", req.user.id);
     const imagePath = req.file ? path.join('/uploads', req.file.filename) : null;
-    const imagePath2 = req.file.path.replace(/\\/g, "/");
-
-    if (!imagePath) {
+    const imagePath2 = req.file ? req.file.path.replace(/\\/g, "/") : null
+    if (!imagePath2) {
         return res.status(400).json({ message: 'Image upload failed' });
     }
 

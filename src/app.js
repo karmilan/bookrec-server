@@ -33,7 +33,7 @@ app.use("/api/auth", authRoutes)
 app.use("/api", bookRoutes);
 
 // Serve static files from the uploads folder
-app.use('/assets/images', express.static(path.join(__dirname, '../assets/images')));
+app.use('/api/assets/images', express.static(path.join(__dirname, '../assets/images')));
 
 
 // CRUD functionality of reviews
